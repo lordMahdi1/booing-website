@@ -51,7 +51,7 @@ function ResponsiveAppBar() {
             href="/"
             sx={{
               mr: 2,
-              display: { xs: 'none', md: 'flex' },
+              display: 'flex',
               fontFamily: 'monospace',
               fontWeight: 700,
               letterSpacing: '.3rem',
@@ -63,7 +63,7 @@ function ResponsiveAppBar() {
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-            <IconButton
+            {/* <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
@@ -72,8 +72,8 @@ function ResponsiveAppBar() {
               color="inherit"
             >
               <MenuIcon />
-            </IconButton>
-            <Menu
+            </IconButton> */}
+            {/* <Menu
               id="menu-appbar"
               anchorEl={anchorElNav}
               anchorOrigin={{
@@ -90,9 +90,9 @@ function ResponsiveAppBar() {
               sx={{
                 display: { xs: 'block', md: 'none' },
               }}
-            >
+            > */}
              
-                <MenuItem onClick={handleCloseNavMenu}>
+                {/* <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center" onClick={()=>{navigate('/dashboard')}}>{pages[0]}</Typography>
                 </MenuItem>
 
@@ -103,12 +103,12 @@ function ResponsiveAppBar() {
                 <MenuItem onClick={handleCloseNavMenu}>
                   <Typography textAlign="center" onClick={()=>{navigate('/chisiamo')}}>{pages[2]}</Typography>
                 </MenuItem>
-                
+                 */}
               
-            </Menu>
+            {/* </Menu> */}
           </Box>
          
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
+          {/* <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             
               <Button
                 
@@ -132,9 +132,9 @@ function ResponsiveAppBar() {
                 {pages[2]}
               </Button>
             
-          </Box>
+          </Box> */}
 
-          <Box sx={{ flexGrow: 0 }}>
+          {/* <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
@@ -167,7 +167,7 @@ function ResponsiveAppBar() {
                 </MenuItem>
            
             </Menu>
-          </Box>
+          </Box> */}
         </Toolbar>
       </Container>
     </AppBar>

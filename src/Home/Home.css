@@ -1,0 +1,24 @@
+@media screen and (max-width: 900px) {
+  .css-1mwzyv-MuiStack-root {
+    display: grid !important;
+    grid-gap: 20px !important;
+    grid-auto-flow: row;
+    /* justify-items: center;
+    text-align: justify; */
+  }
+  .Icon {
+    margin: unset !important;
+  }
+  .description {
+    text-align: start;
+    font-size: 20px;
+  }
+}
+
+.footerContainer{
+    padding : 10px 20px;
+}
+
+.descriptionContainer {
+  padding: 10% 20%;
+}
